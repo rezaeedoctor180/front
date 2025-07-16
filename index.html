@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScienceHub - Research Articles Portal</title>
+    <title>علم‌هاب - پورتال مقالات پژوهشی</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -15,14 +15,13 @@
             <div class="nav-container">
                 <div class="nav-logo">
                     <i class="fas fa-atom"></i>
-                    <span>ScienceHub</span>
+                    <span>علم‌هاب</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#search" class="nav-link">Search</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#comments" class="nav-link">Comments</a></li>
+                    <li><a href="#home" class="nav-link">خانه</a></li>
+                    <li><a href="#search" class="nav-link">جستجو</a></li>
+                    <li><a href="#about" class="nav-link">درباره ما</a></li>
+                    <li><a href="#contact" class="nav-link">تماس با ما</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -33,94 +32,96 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Search -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Discover Scientific Knowledge</h1>
+                <h1 class="hero-title">دانش علمی را کشف کنید</h1>
                 <p class="hero-description">
-                    Access thousands of peer-reviewed research articles, papers, and publications 
-                    from leading scientific journals worldwide.
+                    به هزاران مقاله پژوهشی، مطالعات و انتشارات بررسی‌شده از مجلات علمی پیشرو در سراسر جهان دسترسی داشته باشید.
                 </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">50K+</span>
-                        <span class="stat-label">Articles</span>
+                
+                <!-- Search Section in Hero -->
+                <div class="hero-search-container">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="جستجو برای مقالات، نویسندگان، کلیدواژه‌ها...">
+                        <button id="searchBtn" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Journals</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">100K+</span>
-                        <span class="stat-label">Downloads</span>
+                    
+                    <div class="search-filters">
+                        <select id="categoryFilter">
+                            <option value="">همه دسته‌ها</option>
+                            <option value="biology">زیست‌شناسی</option>
+                            <option value="physics">فیزیک</option>
+                            <option value="chemistry">شیمی</option>
+                            <option value="medicine">پزشکی</option>
+                            <option value="computer-science">علوم کامپیوتر</option>
+                            <option value="mathematics">ریاضیات</option>
+                        </select>
+                        
+                        <select id="yearFilter">
+                            <option value="">همه سال‌ها</option>
+                            <option value="2024">۲۰۲۴</option>
+                            <option value="2023">۲۰۲۳</option>
+                            <option value="2022">۲۰۲۲</option>
+                            <option value="2021">۲۰۲۱</option>
+                            <option value="2020">۲۰۲۰</option>
+                        </select>
                     </div>
                 </div>
-                <a href="#search" class="hero-btn">Start Exploring</a>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">+۵۰ هزار</span>
+                        <span class="stat-label">مقاله</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">+۵۰۰</span>
+                        <span class="stat-label">مجله</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">+۱۰۰ هزار</span>
+                        <span class="stat-label">دانلود</span>
+                    </div>
+                </div>
+                
+                <a href="#search" class="hero-btn">شروع کاوش</a>
             </div>
             <div class="hero-visual">
                 <div class="floating-cards">
                     <div class="card card-1">
                         <i class="fas fa-dna"></i>
-                        <span>Biology</span>
+                        <span>زیست‌شناسی</span>
                     </div>
                     <div class="card card-2">
                         <i class="fas fa-atom"></i>
-                        <span>Physics</span>
+                        <span>فیزیک</span>
                     </div>
                     <div class="card card-3">
                         <i class="fas fa-flask"></i>
-                        <span>Chemistry</span>
+                        <span>شیمی</span>
                     </div>
                     <div class="card card-4">
                         <i class="fas fa-brain"></i>
-                        <span>Neuroscience</span>
+                        <span>علوم اعصاب</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Search Section -->
+    <!-- Search Results Section -->
     <section id="search" class="search-section">
         <div class="container">
             <div class="section-header">
-                <h2>Search Articles</h2>
-                <p>Find research papers and articles across various scientific disciplines</p>
+                <h2>نتایج جستجو</h2>
+                <p>مقالات و پژوهش‌های علمی در رشته‌های مختلف را پیدا کنید</p>
             </div>
             
-            <div class="search-container">
-                <div class="search-bar">
-                    <input type="text" id="searchInput" placeholder="Search for articles, authors, keywords...">
-                    <button id="searchBtn" class="search-btn">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-                
-                <div class="search-filters">
-                    <select id="categoryFilter">
-                        <option value="">All Categories</option>
-                        <option value="biology">Biology</option>
-                        <option value="physics">Physics</option>
-                        <option value="chemistry">Chemistry</option>
-                        <option value="medicine">Medicine</option>
-                        <option value="computer-science">Computer Science</option>
-                        <option value="mathematics">Mathematics</option>
-                    </select>
-                    
-                    <select id="yearFilter">
-                        <option value="">All Years</option>
-                        <option value="2024">2024</option>
-                        <option value="2023">2023</option>
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                    </select>
-                </div>
-            </div>
-
             <div id="searchResults" class="search-results">
-                <!-- Default articles will be displayed here -->
+                <!-- Search results will be displayed here -->
             </div>
         </div>
     </section>
@@ -130,33 +131,32 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About ScienceHub</h2>
+                    <h2>درباره علم‌هاب</h2>
                     <p>
-                        ScienceHub is a premier platform dedicated to democratizing access to scientific knowledge. 
-                        We believe that research should be accessible to everyone, from students and educators to 
-                        researchers and curious minds around the world.
+                        علم‌هاب یک پلتفرم پیشرو است که به دموکراتیزه کردن دسترسی به دانش علمی اختصاص یافته است. 
+                        ما معتقدیم که پژوهش باید برای همه قابل دسترسی باشد، از دانشجویان و اساتید گرفته تا 
+                        پژوهشگران و ذهن‌های کنجکاو در سراسر جهان.
                     </p>
                     <p>
-                        Our mission is to bridge the gap between scientific discovery and public understanding by 
-                        providing a comprehensive, user-friendly platform for accessing peer-reviewed research 
-                        articles across all scientific disciplines.
+                        ماموریت ما پل زدن بین کشف علمی و درک عمومی است، از طریق فراهم کردن یک پلتفرم 
+                        جامع و کاربرپسند برای دسترسی به مقالات پژوهشی بررسی‌شده در تمام رشته‌های علمی.
                     </p>
                     
                     <div class="features">
                         <div class="feature">
                             <i class="fas fa-download"></i>
-                            <h3>Easy Downloads</h3>
-                            <p>Download research papers instantly in multiple formats</p>
+                            <h3>دانلود آسان</h3>
+                            <p>دانلود فوری مقالات پژوهشی در فرمت‌های مختلف</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-search"></i>
-                            <h3>Advanced Search</h3>
-                            <p>Find exactly what you need with our powerful search tools</p>
+                            <h3>جستجوی پیشرفته</h3>
+                            <p>با ابزارهای قدرتمند جستجو دقیقاً آنچه نیاز دارید پیدا کنید</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-users"></i>
-                            <h3>Community</h3>
-                            <p>Connect with researchers and join scientific discussions</p>
+                            <h3>جامعه علمی</h3>
+                            <p>با پژوهشگران ارتباط برقرار کنید و در گفتگوهای علمی شرکت کنید</p>
                         </div>
                     </div>
                 </div>
@@ -173,8 +173,8 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
-                <h2>Contact Us</h2>
-                <p>Get in touch with our team for any questions or support</p>
+                <h2>تماس با ما</h2>
+                <p>برای هرگونه سوال یا پشتیبانی با تیم ما در تماس باشید</p>
             </div>
             
             <div class="contact-content">
@@ -182,73 +182,47 @@
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h3>Email</h3>
-                            <p>support@sciencehub.org</p>
+                            <h3>ایمیل</h3>
+                            <p>support@sciencehub.ir</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
+                            <h3>تلفن</h3>
+                            <p>۰۲۱-۱۲۳۴۵۶۷۸</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h3>Address</h3>
-                            <p>123 Research Ave, Science City, SC 12345</p>
+                            <h3>آدرس</h3>
+                            <p>تهران، خیابان پژوهش، پلاک ۱۲۳</p>
                         </div>
                     </div>
                 </div>
                 
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" id="contactName" placeholder="Your Name" required>
+                        <input type="text" id="contactName" placeholder="نام شما" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="contactEmail" placeholder="Your Email" required>
+                        <input type="email" id="contactEmail" placeholder="ایمیل شما" required>
                     </div>
                     <div class="form-group">
                         <select id="contactSubject" required>
-                            <option value="">Select Subject</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="technical">Technical Support</option>
-                            <option value="partnership">Partnership</option>
-                            <option value="feedback">Feedback</option>
+                            <option value="">موضوع را انتخاب کنید</option>
+                            <option value="general">استعلام عمومی</option>
+                            <option value="technical">پشتیبانی فنی</option>
+                            <option value="partnership">همکاری</option>
+                            <option value="feedback">بازخورد</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+                        <textarea id="contactMessage" placeholder="پیام شما" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn">ارسال پیام</button>
                 </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comments Section -->
-    <section id="comments" class="comments-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Community Comments</h2>
-                <p>Share your thoughts and connect with fellow researchers</p>
-            </div>
-            
-            <div class="comments-container">
-                <form class="comment-form" id="commentForm">
-                    <div class="form-group">
-                        <input type="text" id="commentName" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="commentText" placeholder="Share your thoughts..." rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Post Comment</button>
-                </form>
-                
-                <div id="commentsList" class="comments-list">
-                    <!-- Comments will be displayed here -->
-                </div>
             </div>
         </div>
     </section>
@@ -260,9 +234,9 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <i class="fas fa-atom"></i>
-                        <span>ScienceHub</span>
+                        <span>علم‌هاب</span>
                     </div>
-                    <p>Democratizing access to scientific knowledge worldwide.</p>
+                    <p>دموکراتیزه کردن دسترسی به دانش علمی در سراسر جهان.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -272,38 +246,38 @@
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3>لینک‌های سریع</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#search">Search</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#search">جستجو</a></li>
+                        <li><a href="#about">درباره ما</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Categories</h3>
+                    <h3>دسته‌بندی‌ها</h3>
                     <ul>
-                        <li><a href="#">Biology</a></li>
-                        <li><a href="#">Physics</a></li>
-                        <li><a href="#">Chemistry</a></li>
-                        <li><a href="#">Medicine</a></li>
+                        <li><a href="#">زیست‌شناسی</a></li>
+                        <li><a href="#">فیزیک</a></li>
+                        <li><a href="#">شیمی</a></li>
+                        <li><a href="#">پزشکی</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Support</h3>
+                    <h3>پشتیبانی</h3>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">مرکز راهنمایی</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                        <li><a href="#">شرایط استفاده</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 ScienceHub. All rights reserved.</p>
+                <p>&copy; ۱۴۰۳ علم‌هاب. تمامی حقوق محفوظ است.</p>
             </div>
         </div>
     </footer>

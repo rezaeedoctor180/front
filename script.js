@@ -1,86 +1,64 @@
-// Sample articles data
+// Sample articles data in Persian
 const sampleArticles = [
     {
         id: 1,
-        title: "Quantum Computing Advances in Drug Discovery",
-        authors: "Dr. Sarah Chen, Dr. Michael Rodriguez, Dr. Emily Watson",
-        journal: "Nature Quantum Computing",
+        title: "پیشرفت‌های محاسبات کوانتومی در کشف دارو",
+        authors: "دکتر سارا احمدی، دکتر محمد رضایی، دکتر فاطمه کریمی",
+        journal: "مجله محاسبات کوانتومی طبیعت",
         year: "2024",
         category: "physics",
-        abstract: "This study presents breakthrough applications of quantum computing algorithms in accelerating drug discovery processes, reducing computational time by 75% compared to classical methods.",
+        abstract: "این مطالعه کاربردهای پیشرفته الگوریتم‌های محاسبات کوانتومی در تسریع فرآیندهای کشف دارو را ارائه می‌دهد که زمان محاسبه را نسبت به روش‌های کلاسیک ۷۵ درصد کاهش می‌دهد.",
         downloadUrl: "#"
     },
     {
         id: 2,
-        title: "CRISPR-Cas9 Gene Editing in Neurological Disorders",
-        authors: "Dr. James Kim, Dr. Lisa Thompson, Dr. Robert Brown",
-        journal: "Cell Medicine",
+        title: "ویرایش ژن CRISPR-Cas9 در اختلالات عصبی",
+        authors: "دکتر علی مرادی، دکتر لیلا حسینی، دکتر رضا نوری",
+        journal: "مجله پزشکی سلولی",
         year: "2024",
         category: "biology",
-        abstract: "We demonstrate successful application of CRISPR-Cas9 technology in treating genetic neurological disorders, showing 85% improvement in patient outcomes across clinical trials.",
+        abstract: "ما کاربرد موفقیت‌آمیز فناوری CRISPR-Cas9 در درمان اختلالات عصبی ژنتیکی را نشان می‌دهیم که ۸۵ درصد بهبودی در نتایج بیماران در آزمایشات بالینی نشان می‌دهد.",
         downloadUrl: "#"
     },
     {
         id: 3,
-        title: "Sustainable Synthesis of Novel Organic Compounds",
-        authors: "Dr. Maria Gonzalez, Dr. David Lee, Dr. Anna Petrov",
-        journal: "Green Chemistry Letters",
+        title: "سنتز پایدار ترکیبات آلی جدید",
+        authors: "دکتر مریم غفاری، دکتر حسن عباسی، دکتر آنا پتروف",
+        journal: "نامه‌های شیمی سبز",
         year: "2023",
         category: "chemistry",
-        abstract: "Development of environmentally friendly synthetic pathways for complex organic molecules using renewable resources and minimizing waste production.",
+        abstract: "توسعه مسیرهای سنتزی سازگار با محیط زیست برای مولکول‌های آلی پیچیده با استفاده از منابع تجدیدپذیر و کاهش تولید زباله.",
         downloadUrl: "#"
     },
     {
         id: 4,
-        title: "Machine Learning in Diagnostic Imaging",
-        authors: "Dr. Kevin Zhang, Dr. Rachel Adams, Dr. Tom Wilson",
-        journal: "Medical AI Review",
+        title: "یادگیری ماشین در تصویربرداری تشخیصی",
+        authors: "دکتر کیوان زمانی، دکتر نرگس امینی، دکتر تام ویلسون",
+        journal: "بررسی هوش مصنوعی پزشکی",
         year: "2024",
         category: "computer-science",
-        abstract: "Implementation of advanced neural networks for automated medical image analysis, achieving 96% accuracy in early disease detection across multiple imaging modalities.",
+        abstract: "پیاده‌سازی شبکه‌های عصبی پیشرفته برای تجزیه و تحلیل خودکار تصاویر پزشکی، دستیابی به ۹۶ درصد دقت در تشخیص زودهنگام بیماری در چندین روش تصویربرداری.",
         downloadUrl: "#"
     },
     {
         id: 5,
-        title: "Climate Change Impact on Marine Ecosystems",
-        authors: "Dr. Sophie Martin, Dr. Carlos Silva, Dr. Jennifer Clark",
-        journal: "Marine Biology Today",
+        title: "تأثیر تغییرات اقلیمی بر اکوسیستم‌های دریایی",
+        authors: "دکتر سوفیا مارتین، دکتر کارلوس سیلوا، دکتر جنیفر کلارک",
+        journal: "زیست‌شناسی دریایی امروز",
         year: "2023",
         category: "biology",
-        abstract: "Comprehensive analysis of oceanic temperature changes and their effects on marine biodiversity, revealing critical tipping points for ecosystem preservation.",
+        abstract: "تجزیه و تحلیل جامع تغییرات دمای اقیانوس‌ها و تأثیرات آن بر تنوع زیستی دریایی، نقاط بحرانی برای حفظ اکوسیستم را آشکار می‌کند.",
         downloadUrl: "#"
     },
     {
         id: 6,
-        title: "Breakthrough in Alzheimer's Disease Treatment",
-        authors: "Dr. Helen Foster, Dr. Mark Johnson, Dr. Patricia Davis",
-        journal: "Neurology International",
+        title: "پیشرفت در درمان بیماری آلزایمر",
+        authors: "دکتر هلن فاستر، دکتر مارک جانسون، دکتر پاتریشیا دیویس",
+        journal: "مجله بین‌المللی مغز و اعصاب",
         year: "2024",
         category: "medicine",
-        abstract: "Novel therapeutic approach targeting amyloid plaques shows promising results in Phase III clinical trials, improving cognitive function in 70% of patients.",
+        abstract: "رویکرد درمانی جدید با هدف قرار دادن پلاک‌های آمیلوئید نتایج امیدوارکننده‌ای در آزمایشات بالینی فاز سوم نشان می‌دهد و عملکرد شناختی را در ۷۰ درصد بیماران بهبود می‌بخشد.",
         downloadUrl: "#"
-    }
-];
-
-// Sample comments data
-let comments = [
-    {
-        id: 1,
-        author: "Dr. John Smith",
-        text: "This platform has revolutionized how I access scientific literature. The search functionality is incredibly intuitive and saves me hours of research time.",
-        date: "2024-01-15"
-    },
-    {
-        id: 2,
-        author: "Sarah Research",
-        text: "As a graduate student, having access to such a comprehensive database has been invaluable for my thesis research. Thank you for making science more accessible!",
-        date: "2024-01-10"
-    },
-    {
-        id: 3,
-        author: "Prof. Emily Watson",
-        text: "The quality of articles and the user-friendly interface make this my go-to resource for staying updated with the latest research in my field.",
-        date: "2024-01-05"
     }
 ];
 
@@ -93,8 +71,6 @@ const categoryFilter = document.getElementById('categoryFilter');
 const yearFilter = document.getElementById('yearFilter');
 const searchResults = document.getElementById('searchResults');
 const contactForm = document.getElementById('contactForm');
-const commentForm = document.getElementById('commentForm');
-const commentsList = document.getElementById('commentsList');
 
 // Mobile Navigation
 hamburger.addEventListener('click', () => {
@@ -164,8 +140,8 @@ function displaySearchResults(articles) {
         searchResults.innerHTML = `
             <div style="text-align: center; padding: 3rem; color: #6b7280;">
                 <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
-                <h3>No articles found</h3>
-                <p>Try adjusting your search criteria or browse our available categories.</p>
+                <h3>هیچ مقاله‌ای یافت نشد</h3>
+                <p>معیارهای جستجوی خود را تنظیم کنید یا دسته‌های موجود ما را مرور کنید.</p>
             </div>
         `;
         return;
@@ -183,16 +159,22 @@ function displaySearchResults(articles) {
             </div>
             <button class="download-btn" onclick="downloadArticle(${article.id})">
                 <i class="fas fa-download"></i>
-                Download PDF
+                دانلود PDF
             </button>
         </div>
     `).join('');
 }
 
 function formatCategory(category) {
-    return category.split('-').map(word => 
-        word.charAt(0).toUpperCase() + word.slice(1)
-    ).join(' ');
+    const categoryMap = {
+        'biology': 'زیست‌شناسی',
+        'physics': 'فیزیک',
+        'chemistry': 'شیمی',
+        'medicine': 'پزشکی',
+        'computer-science': 'علوم کامپیوتر',
+        'mathematics': 'ریاضیات'
+    };
+    return categoryMap[category] || category;
 }
 
 function downloadArticle(articleId) {
@@ -203,7 +185,7 @@ function downloadArticle(articleId) {
         downloadNotification.style.cssText = `
             position: fixed;
             top: 100px;
-            right: 20px;
+            left: 20px;
             background: #10b981;
             color: white;
             padding: 1rem 1.5rem;
@@ -211,10 +193,11 @@ function downloadArticle(articleId) {
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             z-index: 10000;
             animation: slideIn 0.3s ease;
+            font-family: 'Vazirmatn', sans-serif;
         `;
         downloadNotification.innerHTML = `
             <i class="fas fa-check-circle"></i>
-            Downloading "${article.title.substring(0, 30)}..."
+            در حال دانلود "${article.title.substring(0, 30)}..."
         `;
         
         document.body.appendChild(downloadNotification);
@@ -232,12 +215,12 @@ function downloadArticle(articleId) {
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideIn {
-        from { transform: translateX(100%); opacity: 0; }
+        from { transform: translateX(-100%); opacity: 0; }
         to { transform: translateX(0); opacity: 1; }
     }
     @keyframes slideOut {
         from { transform: translateX(0); opacity: 1; }
-        to { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(-100%); opacity: 0; }
     }
 `;
 document.head.appendChild(style);
@@ -266,11 +249,11 @@ contactForm.addEventListener('submit', (e) => {
     // Simulate form submission
     const submitBtn = contactForm.querySelector('.submit-btn');
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
+    submitBtn.textContent = 'در حال ارسال...';
     submitBtn.disabled = true;
     
     setTimeout(() => {
-        submitBtn.textContent = 'Message Sent!';
+        submitBtn.textContent = 'پیام ارسال شد!';
         submitBtn.style.background = '#10b981';
         
         // Show success message
@@ -283,10 +266,11 @@ contactForm.addEventListener('submit', (e) => {
             margin-top: 1rem;
             text-align: center;
             border: 1px solid #a7f3d0;
+            font-family: 'Vazirmatn', sans-serif;
         `;
         successMessage.innerHTML = `
             <i class="fas fa-check-circle"></i>
-            Thank you for your message! We'll get back to you within 24 hours.
+            از پیام شما متشکریم! ظرف ۲۴ ساعت با شما تماس خواهیم گرفت.
         `;
         
         contactForm.appendChild(successMessage);
@@ -301,57 +285,6 @@ contactForm.addEventListener('submit', (e) => {
             }
         }, 3000);
     }, 1500);
-});
-
-// Comments functionality
-function displayComments() {
-    if (comments.length === 0) {
-        commentsList.innerHTML = `
-            <div style="text-align: center; padding: 2rem; color: #6b7280;">
-                <p>No comments yet. Be the first to share your thoughts!</p>
-            </div>
-        `;
-        return;
-    }
-    
-    commentsList.innerHTML = comments.map(comment => `
-        <div class="comment">
-            <div class="comment-header">
-                <span class="comment-author">${comment.author}</span>
-                <span class="comment-date">${formatDate(comment.date)}</span>
-            </div>
-            <p class="comment-text">${comment.text}</p>
-        </div>
-    `).join('');
-}
-
-function formatDate(dateString) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString('en-US', options);
-}
-
-commentForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const name = document.getElementById('commentName').value.trim();
-    const text = document.getElementById('commentText').value.trim();
-    
-    if (name && text) {
-        const newComment = {
-            id: comments.length + 1,
-            author: name,
-            text: text,
-            date: new Date().toISOString().split('T')[0]
-        };
-        
-        comments.unshift(newComment); // Add to beginning of array
-        displayComments();
-        commentForm.reset();
-        
-        // Show success animation
-        const newCommentElement = commentsList.firstElementChild;
-        newCommentElement.style.animation = 'slideIn 0.5s ease';
-    }
 });
 
 // Header scroll effect
@@ -401,9 +334,8 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
     
-    // Initial display of search results and comments
+    // Initial display of search results
     displaySearchResults(sampleArticles);
-    displayComments();
 });
 
 // Advanced search features
@@ -443,7 +375,7 @@ function exportSearchResults(format = 'csv') {
     
     if (format === 'csv') {
         const csvContent = [
-            ['Title', 'Authors', 'Journal', 'Year', 'Category'],
+            ['عنوان', 'نویسندگان', 'مجله', 'سال', 'دسته‌بندی'],
             ...filteredArticles.map(article => [
                 article.title,
                 article.authors,
@@ -484,9 +416,17 @@ document.addEventListener('keydown', (e) => {
 const searchShortcutsInfo = document.createElement('div');
 searchShortcutsInfo.style.cssText = `
     font-size: 0.8rem;
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.7);
     text-align: center;
     margin-top: 0.5rem;
+    font-family: 'Vazirmatn', sans-serif;
 `;
-searchShortcutsInfo.innerHTML = 'Press <kbd style="background: #f3f4f6; padding: 2px 6px; border-radius: 4px;">Ctrl+K</kbd> to focus search';
-document.querySelector('.search-bar').parentNode.appendChild(searchShortcutsInfo);
+searchShortcutsInfo.innerHTML = 'برای فعال کردن جستجو <kbd style="background: rgba(255,255,255,0.2); padding: 2px 6px; border-radius: 4px; color: white;">Ctrl+K</kbd> را فشار دهید';
+
+// Add the shortcuts info to hero search container after page loads
+document.addEventListener('DOMContentLoaded', () => {
+    const heroSearchContainer = document.querySelector('.hero-search-container');
+    if (heroSearchContainer) {
+        heroSearchContainer.appendChild(searchShortcutsInfo);
+    }
+});

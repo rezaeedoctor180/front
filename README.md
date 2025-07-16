@@ -1,169 +1,156 @@
-# ScienceHub - Scientific Articles Portal
+# علم‌هاب - پورتال مقالات پژوهشی
 
-A modern, responsive landing page for a scientific website that provides search and download functionality for research articles. This platform makes scientific knowledge accessible to researchers, students, and curious minds worldwide.
+یک صفحه فرود مدرن و ریسپانسیو برای وب‌سایت علمی که قابلیت جستجو و دانلود مقالات پژوهشی را فراهم می‌کند. این پلتفرم دانش علمی را برای پژوهشگران، دانشجویان و ذهن‌های کنجکاو در سراسر جهان قابل دسترس می‌کند.
 
-## Features
+## ویژگی‌ها
 
-### 🔍 **Search & Discovery**
-- Advanced search functionality with real-time filtering
-- Search by title, authors, keywords, or journal
-- Filter by category (Biology, Physics, Chemistry, Medicine, Computer Science, Mathematics)
-- Filter by publication year
-- Keyboard shortcuts (Ctrl+K to focus search, Escape to clear)
+### 🔍 **جستجو و کشف**
+- قابلیت جستجوی پیشرفته با فیلتر کردن لحظه‌ای
+- جستجو بر اساس عنوان، نویسندگان، کلیدواژه‌ها یا مجله
+- فیلتر بر اساس دسته‌بندی (زیست‌شناسی، فیزیک، شیمی، پزشکی، علوم کامپیوتر، ریاضیات)
+- فیلتر بر اساس سال انتشار
+- میانبرهای صفحه کلید (Ctrl+K برای فعال کردن جستجو، Escape برای پاک کردن)
 
-### 📄 **Article Management**
-- Display comprehensive article information
-- Download functionality for research papers
-- Sample articles across multiple scientific disciplines
-- Article metadata including authors, journal, year, and category
+### 📄 **مدیریت مقالات**
+- نمایش اطلاعات جامع مقالات
+- قابلیت دانلود مقالات پژوهشی
+- مقالات نمونه در رشته‌های مختلف علمی
+- متادیتای مقالات شامل نویسندگان، مجله، سال و دسته‌بندی
 
-### 💬 **Community Features**
-- Comments section for user engagement
-- Real-time comment posting
-- Community feedback and discussions
+### 📞 **تماس و پشتیبانی**
+- فرم تماس با انواع مختلف درخواست
+- نمایش اطلاعات تماس
+- اعتبارسنجی فرم و بازخورد ارسال
 
-### 📞 **Contact & Support**
-- Contact form with multiple inquiry types
-- Contact information display
-- Form validation and submission feedback
+### 📱 **رابط کاربری مدرن**
+- طراحی کاملاً ریسپانسیو برای همه دستگاه‌ها
+- پس‌زمینه‌های گرادیانی زیبا و انیمیشن‌ها
+- انیمیشن‌های کارت شناور
+- ناوبری نرم و روان
+- منوی همبرگری موبایل
+- تایپوگرافی حرفه‌ای با فونت وزیرمتن
+- یکپارچگی آیکون‌های FontAwesome
+- پشتیبانی کامل از RTL (راست به چپ)
 
-### 📱 **Modern UI/UX**
-- Fully responsive design for all devices
-- Beautiful gradient backgrounds and animations
-- Floating card animations
-- Smooth scrolling navigation
-- Mobile hamburger menu
-- Professional typography using Inter font
-- FontAwesome icons integration
+### ⚡ **عملکرد و دسترسی‌پذیری**
+- بارگذاری سریع و عملکرد بهینه
+- پشتیبانی از ناوبری با کیبورد
+- انیمیشن‌های فعال شده با اسکرول
+- ساختار HTML معنایی و تمیز
 
-### ⚡ **Performance & Accessibility**
-- Fast loading and optimized performance
-- Keyboard navigation support
-- Scroll-triggered animations
-- Clean, semantic HTML structure
-
-## File Structure
+## ساختار فایل‌ها
 
 ```
-├── index.html          # Main HTML structure
-├── styles.css          # Complete CSS styling and animations
-├── script.js           # JavaScript functionality and interactions
-└── README.md          # Documentation
+├── index.html          # ساختار اصلی HTML
+├── styles.css          # استایل‌دهی کامل CSS و انیمیشن‌ها
+├── script.js           # عملکرد جاوااسکریپت و تعاملات
+└── README.md          # مستندات
 ```
 
-## Technologies Used
+## فناوری‌های استفاده شده
 
-- **HTML5** - Semantic structure
-- **CSS3** - Modern styling with Flexbox/Grid, animations, and responsive design
-- **Vanilla JavaScript** - Interactive functionality
-- **Font Awesome** - Icons
-- **Google Fonts** - Inter typography
+- **HTML5** - ساختار معنایی
+- **CSS3** - استایل‌دهی مدرن با Flexbox/Grid، انیمیشن‌ها و طراحی ریسپانسیو
+- **Vanilla JavaScript** - عملکرد تعاملی
+- **Font Awesome** - آیکون‌ها
+- **Google Fonts** - تایپوگرافی وزیرمتن
+- **RTL Support** - پشتیبانی کامل از راست به چپ
 
-## Getting Started
+## شروع کار
 
-1. **Clone or download** the repository
-2. **Open `index.html`** in your web browser
-3. **Explore the features**:
-   - Browse sample articles in the search section
-   - Test the search and filtering functionality
-   - Try the contact form
-   - Add comments to engage with the community
+1. **کلون یا دانلود** مخزن پروژه
+2. **باز کردن `index.html`** در مرورگر وب
+3. **کاوش ویژگی‌ها**:
+   - مرور مقالات نمونه در بخش جستجو
+   - تست قابلیت جستجو و فیلتر کردن
+   - امتحان فرم تماس
 
-## Usage
+## نحوه استفاده
 
-### Navigation
-- Use the fixed navigation bar to jump between sections
-- On mobile, tap the hamburger menu for navigation options
+### ناوبری
+- از نوار ناوبری ثابت برای پرش بین بخش‌ها استفاده کنید
+- در موبایل، روی منوی همبرگری ضربه بزنید
 
-### Search Articles
-- Use the search bar to find specific articles
-- Apply filters for category and year
-- Click "Download PDF" on any article (simulated download)
+### جستجوی مقالات
+- از نوار جستجو در بخش اصلی استفاده کنید
+- فیلترهای دسته‌بندی و سال را اعمال کنید
+- روی "دانلود PDF" در هر مقاله کلیک کنید (شبیه‌سازی دانلود)
 
-### Contact Form
-- Fill out the contact form to send inquiries
-- Select appropriate subject categories
-- Form includes validation and success feedback
+### فرم تماس
+- فرم تماس را برای ارسال درخواست‌ها پر کنید
+- دسته‌بندی‌های موضوع مناسب را انتخاب کنید
+- فرم شامل اعتبارسنجی و بازخورد موفقیت است
 
-### Comments
-- Share your thoughts in the comments section
-- Comments are displayed in real-time
-- No registration required
+## داده‌های نمونه
 
-## Sample Data
+وب‌سایت شامل ۶ مقاله علمی نمونه در زمینه‌های:
+- محاسبات کوانتومی در کشف دارو
+- ویرایش ژن CRISPR-Cas9
+- شیمی پایدار
+- یادگیری ماشین در تصویربرداری پزشکی
+- تحقیقات تغییرات اقلیمی
+- درمان بیماری آلزایمر
 
-The website includes 6 sample scientific articles covering:
-- Quantum Computing in Drug Discovery
-- CRISPR-Cas9 Gene Editing
-- Sustainable Chemistry
-- Machine Learning in Medical Imaging
-- Climate Change Research
-- Alzheimer's Disease Treatment
+## طراحی ریسپانسیو
 
-## Responsive Design
+وب‌سایت کاملاً ریسپانسیو است و روی دستگاه‌های زیر به خوبی کار می‌کند:
+- کامپیوترهای رومیزی (1200px+)
+- تبلت‌ها (768px - 1199px)
+- تلفن‌های همراه (< 768px)
 
-The website is fully responsive and works seamlessly on:
-- Desktop computers (1200px+)
-- Tablets (768px - 1199px)
-- Mobile phones (< 768px)
+## پشتیبانی مرورگر
 
-## Browser Support
+سازگار با تمام مرورگرهای مدرن:
+- Chrome (آخرین نسخه)
+- Firefox (آخرین نسخه)
+- Safari (آخرین نسخه)
+- Edge (آخرین نسخه)
 
-Compatible with all modern browsers:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+## سفارشی‌سازی
 
-## Customization
+برای سفارشی کردن وب‌سایت:
 
-To customize the website:
+1. **اضافه/ویرایش مقالات**: آرایه `sampleArticles` در `script.js` را تغییر دهید
+2. **تغییر رنگ‌ها**: خصوصیات سفارشی CSS در `styles.css` را به‌روزرسانی کنید
+3. **تغییر محتوا**: محتوای متنی را مستقیماً در `index.html` ویرایش کنید
+4. **اضافه کردن دسته‌ها**: هم گزینه‌های select در HTML و هم فیلتر کردن در جاوااسکریپت را به‌روزرسانی کنید
 
-1. **Add/Edit Articles**: Modify the `sampleArticles` array in `script.js`
-2. **Change Colors**: Update CSS custom properties in `styles.css`
-3. **Modify Content**: Edit text content directly in `index.html`
-4. **Add Categories**: Update both the HTML select options and JavaScript filtering
+## جزئیات ویژگی‌ها
 
-## Features in Detail
+### بخش اصلی (Hero)
+- کارت‌های شناور انیمیشنی نمایندۀ رشته‌های مختلف علمی
+- نمایش آمار (مقالات، مجلات، دانلودها)
+- جستجوی یکپارچه در بخش اصلی
+- دکمه فراخوان به عمل منتقل به بخش نتایج
 
-### Hero Section
-- Animated floating cards representing different scientific disciplines
-- Statistics display (articles, journals, downloads)
-- Call-to-action button leading to search section
+### بخش درباره ما
+- ماموریت و چشم‌انداز پلتفرم
+- ویژگی‌های برجسته با آیکون
+- انیمیشن میکروسکوپ
 
-### About Section
-- Platform mission and vision
-- Feature highlights with icons
-- Animated microscope visual
+### بخش نتایج جستجو
+- جستجو و فیلتر کردن لحظه‌ای
+- چیدمان کارت ریسپانسیو برای مقالات
+- نمایش اطلاعات تفصیلی مقالات
 
-### Search Section
-- Real-time search and filtering
-- Responsive card layout for articles
-- Detailed article information display
+### بخش تماس
+- فرم تماس حرفه‌ای
+- کارت‌های اطلاعات تماس
+- بازخورد موفقیت/خطا
 
-### Contact Section
-- Professional contact form
-- Contact information cards
-- Success/error feedback
+### فوتر
+- لینک‌های جامع سایت
+- یکپارچگی شبکه‌های اجتماعی
+- برندسازی حرفه‌ای
 
-### Comments Section
-- User engagement platform
-- Real-time comment posting
-- Clean comment display layout
+## مجوز
 
-### Footer
-- Comprehensive site links
-- Social media integration
-- Professional branding
+این پروژه متن باز است و تحت مجوز MIT در دسترس قرار دارد.
 
-## License
+## مشارکت
 
-This project is open source and available under the MIT License.
-
-## Contributing
-
-Feel free to submit issues, fork the repository, and create pull requests for any improvements.
+برای بهبودها، ارسال issue، fork کردن مخزن و ایجاد pull request آزاد هستید.
 
 ---
 
-**ScienceHub** - Making scientific knowledge accessible to everyone. 🔬✨
+**علم‌هاب** - دانش علمی را برای همه قابل دسترس می‌کند. 🔬✨
