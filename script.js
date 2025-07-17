@@ -110,6 +110,34 @@ const sampleArticles = [
     }
 ];
 
+// Pricing data
+const pricingData = {
+    free: {
+        name: 'رایگان',
+        monthlyPrice: 0,
+        yearlyPrice: 0,
+        description: 'برای شروع'
+    },
+    basic: {
+        name: 'پایه',
+        monthlyPrice: 99000,
+        yearlyPrice: 950000,
+        description: 'برای دانشجویان'
+    },
+    premium: {
+        name: 'حرفه‌ای',
+        monthlyPrice: 199000,
+        yearlyPrice: 1900000,
+        description: 'برای پژوهشگران'
+    },
+    enterprise: {
+        name: 'سازمانی',
+        monthlyPrice: 499000,
+        yearlyPrice: 4800000,
+        description: 'برای موسسات و دانشگاه‌ها'
+    }
+};
+
 // DOM Elements
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -330,6 +358,170 @@ function downloadArticle(articleId) {
     }
 }
 
+// Pricing functionality
+let isYearly = false;
+let selectedPackageData = null;
+
+// Pricing toggle functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const pricingToggle = document.getElementById('pricingToggle');
+    if (pricingToggle) {
+        pricingToggle.addEventListener('change', () => {
+            isYearly = pricingToggle.checked;
+            updatePricingDisplay();
+        });
+    }
+    
+    // Initial display
+    displaySearchResults(sampleArticles);
+    updatePricingDisplay();
+});
+
+function updatePricingDisplay() {
+    const monthlyPrices = document.querySelectorAll('.monthly-price');
+    const yearlyPrices = document.querySelectorAll('.yearly-price');
+    
+    if (isYearly) {
+        monthlyPrices.forEach(price => price.style.display = 'none');
+        yearlyPrices.forEach(price => price.style.display = 'block');
+    } else {
+        monthlyPrices.forEach(price => price.style.display = 'block');
+        yearlyPrices.forEach(price => price.style.display = 'none');
+    }
+}
+
+function selectPackage(packageType) {
+    selectedPackageData = {
+        type: packageType,
+        ...pricingData[packageType],
+        isYearly: isYearly
+    };
+    
+    if (packageType === 'free') {
+        // Handle free package signup
+        showNotification('عضویت رایگان شما فعال شد!', 'success');
+        return;
+    }
+    
+    if (packageType === 'enterprise') {
+        // Handle enterprise contact
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        return;
+    }
+    
+    // Show purchase modal
+    showPurchaseModal();
+}
+
+function showPurchaseModal() {
+    const modal = document.getElementById('purchaseModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const selectedPackage = document.getElementById('selectedPackage');
+    const selectedDuration = document.getElementById('selectedDuration');
+    const totalAmount = document.getElementById('totalAmount');
+    
+    modalTitle.textContent = `خرید پکیج ${selectedPackageData.name}`;
+    selectedPackage.textContent = selectedPackageData.name;
+    selectedDuration.textContent = isYearly ? 'سالانه' : 'ماهانه';
+    
+    const price = isYearly ? selectedPackageData.yearlyPrice : selectedPackageData.monthlyPrice;
+    totalAmount.textContent = `${price.toLocaleString('fa-IR')} تومان`;
+    
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closePurchaseModal() {
+    const modal = document.getElementById('purchaseModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    
+    // Reset form
+    document.getElementById('purchaseForm').reset();
+}
+
+// Purchase form handling
+document.addEventListener('DOMContentLoaded', () => {
+    const purchaseForm = document.getElementById('purchaseForm');
+    if (purchaseForm) {
+        purchaseForm.addEventListener('submit', handlePurchase);
+    }
+});
+
+function handlePurchase(e) {
+    e.preventDefault();
+    
+    const formData = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        package: selectedPackageData.name,
+        duration: isYearly ? 'سالانه' : 'ماهانه',
+        amount: isYearly ? selectedPackageData.yearlyPrice : selectedPackageData.monthlyPrice,
+        paymentMethod: document.querySelector('input[name="payment"]:checked').value
+    };
+    
+    // Simulate payment processing
+    const purchaseBtn = document.querySelector('.purchase-btn');
+    const originalText = purchaseBtn.innerHTML;
+    
+    purchaseBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> در حال پردازش...';
+    purchaseBtn.disabled = true;
+    
+    setTimeout(() => {
+        // Simulate successful payment
+        closePurchaseModal();
+        showNotification('پرداخت با موفقیت انجام شد! به زودی ایمیل تأیید دریافت خواهید کرد.', 'success');
+        
+        // Reset button
+        purchaseBtn.innerHTML = originalText;
+        purchaseBtn.disabled = false;
+        
+        // Log purchase data (in real app, send to server)
+        console.log('Purchase data:', formData);
+    }, 2000);
+}
+
+function showNotification(message, type = 'info') {
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        top: 100px;
+        left: 20px;
+        background: ${type === 'success' ? '#10b981' : '#2563eb'};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        z-index: 10000;
+        animation: slideIn 0.3s ease;
+        font-family: 'Vazirmatn', sans-serif;
+        max-width: 400px;
+    `;
+    notification.innerHTML = `
+        <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'}"></i>
+        ${message}
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 5000);
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('purchaseModal');
+    if (e.target === modal) {
+        closePurchaseModal();
+    }
+});
+
 // Add CSS animations for download notification
 const style = document.createElement('style');
 style.textContent = `
@@ -452,9 +644,6 @@ document.addEventListener('DOMContentLoaded', () => {
         section.classList.add('animate-on-scroll');
         observer.observe(section);
     });
-    
-    // Initial display of search results
-    displaySearchResults(sampleArticles);
 });
 
 // Advanced search features
@@ -529,6 +718,14 @@ document.addEventListener('keydown', (e) => {
         categoryFilter.value = '';
         yearFilter.value = '';
         performSearch();
+    }
+    
+    // Escape to close modal
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('purchaseModal');
+        if (modal && modal.style.display === 'block') {
+            closePurchaseModal();
+        }
     }
 });
 

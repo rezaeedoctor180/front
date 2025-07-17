@@ -20,6 +20,7 @@
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">خانه</a></li>
                     <li><a href="#search" class="nav-link">جستجو</a></li>
+                    <li><a href="#pricing" class="nav-link">پکیج‌ها</a></li>
                     <li><a href="#about" class="nav-link">درباره ما</a></li>
                     <li><a href="#contact" class="nav-link">تماس با ما</a></li>
                 </ul>
@@ -125,6 +126,217 @@
             
             <div id="searchResults" class="search-results">
                 <!-- Search results will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>پکیج‌های دسترسی</h2>
+                <p>پکیج مناسب خود را انتخاب کنید و به هزاران مقاله علمی دسترسی داشته باشید</p>
+            </div>
+
+            <div class="pricing-toggle">
+                <span class="toggle-label">ماهانه</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label">سالانه <span class="discount-badge">۲۰% تخفیف</span></span>
+            </div>
+
+            <div class="pricing-cards">
+                <!-- Free Package -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>رایگان</h3>
+                        <div class="price">
+                            <span class="currency">رایگان</span>
+                        </div>
+                        <p class="price-desc">برای شروع</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i>دسترسی به ۵ مقاله در ماه</li>
+                            <li><i class="fas fa-check"></i>جستجوی پایه</li>
+                            <li><i class="fas fa-check"></i>مشاهده خلاصه مقالات</li>
+                            <li><i class="fas fa-times"></i>دانلود مقالات</li>
+                            <li><i class="fas fa-times"></i>دسترسی به مقالات پریمیوم</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn" onclick="selectPackage('free')">شروع رایگان</button>
+                </div>
+
+                <!-- Basic Package -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>پایه</h3>
+                        <div class="price">
+                            <span class="monthly-price">
+                                <span class="amount">۹۹,۰۰۰</span>
+                                <span class="currency">تومان/ماه</span>
+                            </span>
+                            <span class="yearly-price" style="display: none;">
+                                <span class="amount">۹۵۰,۰۰۰</span>
+                                <span class="currency">تومان/سال</span>
+                            </span>
+                        </div>
+                        <p class="price-desc">برای دانشجویان</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i>دسترسی به ۵۰ مقاله در ماه</li>
+                            <li><i class="fas fa-check"></i>جستجوی پیشرفته</li>
+                            <li><i class="fas fa-check"></i>دانلود مقالات</li>
+                            <li><i class="fas fa-check"></i>ذخیره مقالات مورد علاقه</li>
+                            <li><i class="fas fa-times"></i>دسترسی به مقالات پریمیوم</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn" onclick="selectPackage('basic')">انتخاب پکیج</button>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">محبوب‌ترین</div>
+                    <div class="card-header">
+                        <h3>حرفه‌ای</h3>
+                        <div class="price">
+                            <span class="monthly-price">
+                                <span class="amount">۱۹۹,۰۰۰</span>
+                                <span class="currency">تومان/ماه</span>
+                            </span>
+                            <span class="yearly-price" style="display: none;">
+                                <span class="amount">۱,۹۰۰,۰۰۰</span>
+                                <span class="currency">تومان/سال</span>
+                            </span>
+                        </div>
+                        <p class="price-desc">برای پژوهشگران</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i>دسترسی نامحدود به مقالات</li>
+                            <li><i class="fas fa-check"></i>جستجوی هوشمند</li>
+                            <li><i class="fas fa-check"></i>دانلود بدون محدودیت</li>
+                            <li><i class="fas fa-check"></i>دسترسی به مقالات پریمیوم</li>
+                            <li><i class="fas fa-check"></i>پشتیبانی اولویت‌دار</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn premium" onclick="selectPackage('premium')">انتخاب پکیج</button>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>سازمانی</h3>
+                        <div class="price">
+                            <span class="monthly-price">
+                                <span class="amount">۴۹۹,۰۰۰</span>
+                                <span class="currency">تومان/ماه</span>
+                            </span>
+                            <span class="yearly-price" style="display: none;">
+                                <span class="amount">۴,۸۰۰,۰۰۰</span>
+                                <span class="currency">تومان/سال</span>
+                            </span>
+                        </div>
+                        <p class="price-desc">برای موسسات و دانشگاه‌ها</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i>تمام امکانات حرفه‌ای</li>
+                            <li><i class="fas fa-check"></i>چندین کاربر همزمان</li>
+                            <li><i class="fas fa-check"></i>گزارش‌گیری تفصیلی</li>
+                            <li><i class="fas fa-check"></i>API اختصاصی</li>
+                            <li><i class="fas fa-check"></i>پشتیبانی ۲۴/۷</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn" onclick="selectPackage('enterprise')">تماس برای قیمت</button>
+                </div>
+            </div>
+
+            <!-- Purchase Modal -->
+            <div id="purchaseModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="modalTitle">خرید پکیج</h3>
+                        <span class="close" onclick="closePurchaseModal()">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <form id="purchaseForm" class="purchase-form">
+                            <div class="form-section">
+                                <h4>اطلاعات شخصی</h4>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="firstName" placeholder="نام" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="lastName" placeholder="نام خانوادگی" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" placeholder="ایمیل" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" placeholder="تلفن همراه" required>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h4>جزئیات پکیج</h4>
+                                <div class="package-summary">
+                                    <div class="summary-item">
+                                        <span>پکیج انتخابی:</span>
+                                        <span id="selectedPackage"></span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span>مدت زمان:</span>
+                                        <span id="selectedDuration"></span>
+                                    </div>
+                                    <div class="summary-item total">
+                                        <span>مبلغ کل:</span>
+                                        <span id="totalAmount"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h4>روش پرداخت</h4>
+                                <div class="payment-methods">
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="zarinpal" checked>
+                                        <span class="payment-label">
+                                            <i class="fas fa-credit-card"></i>
+                                            درگاه زرین‌پال
+                                        </span>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="mellat">
+                                        <span class="payment-label">
+                                            <i class="fas fa-university"></i>
+                                            درگاه بانک ملت
+                                        </span>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="saman">
+                                        <span class="payment-label">
+                                            <i class="fas fa-money-check"></i>
+                                            درگاه بانک سامان
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="cancel-btn" onclick="closePurchaseModal()">انصراف</button>
+                                <button type="submit" class="purchase-btn">
+                                    <i class="fas fa-lock"></i>
+                                    پرداخت امن
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -253,6 +465,7 @@
                     <ul>
                         <li><a href="#home">خانه</a></li>
                         <li><a href="#search">جستجو</a></li>
+                        <li><a href="#pricing">پکیج‌ها</a></li>
                         <li><a href="#about">درباره ما</a></li>
                         <li><a href="#contact">تماس با ما</a></li>
                     </ul>
