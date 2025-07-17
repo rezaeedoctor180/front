@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علم‌هاب - پورتال مقالات پژوهشی</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-atom"></i>
+                    <span>علم‌هاب</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">خانه</a></li>
+                    <li><a href="#search" class="nav-link">جستجو</a></li>
+                    <li><a href="#about" class="nav-link">درباره ما</a></li>
+                    <li><a href="#contact" class="nav-link">تماس با ما</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Search -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">دانش علمی را کشف کنید</h1>
+                <p class="hero-description">
+                    به هزاران مقاله پژوهشی، مطالعات و انتشارات بررسی‌شده از مجلات علمی پیشرو در سراسر جهان دسترسی داشته باشید.
+                </p>
+                
+                <!-- Search Section in Hero -->
+                <div class="hero-search-container">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="جستجو برای مقالات، نویسندگان، کلیدواژه‌ها...">
+                        <button id="searchBtn" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="search-filters">
+                        <select id="categoryFilter">
+                            <option value="">همه دسته‌ها</option>
+                            <option value="biology">زیست‌شناسی</option>
+                            <option value="physics">فیزیک</option>
+                            <option value="chemistry">شیمی</option>
+                            <option value="medicine">پزشکی</option>
+                            <option value="computer-science">علوم کامپیوتر</option>
+                            <option value="mathematics">ریاضیات</option>
+                        </select>
+                        
+                        <select id="yearFilter">
+                            <option value="">همه سال‌ها</option>
+                            <option value="2024">۲۰۲۴</option>
+                            <option value="2023">۲۰۲۳</option>
+                            <option value="2022">۲۰۲۲</option>
+                            <option value="2021">۲۰۲۱</option>
+                            <option value="2020">۲۰۲۰</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">+۵۰ هزار</span>
+                        <span class="stat-label">مقاله</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">+۵۰۰</span>
+                        <span class="stat-label">مجله</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">+۱۰۰ هزار</span>
+                        <span class="stat-label">دانلود</span>
+                    </div>
+                </div>
+                
+                <a href="#search" class="hero-btn">شروع کاوش</a>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <i class="fas fa-dna"></i>
+                        <span>زیست‌شناسی</span>
+                    </div>
+                    <div class="card card-2">
+                        <i class="fas fa-atom"></i>
+                        <span>فیزیک</span>
+                    </div>
+                    <div class="card card-3">
+                        <i class="fas fa-flask"></i>
+                        <span>شیمی</span>
+                    </div>
+                    <div class="card card-4">
+                        <i class="fas fa-brain"></i>
+                        <span>علوم اعصاب</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section id="search" class="search-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>نتایج جستجو</h2>
+                <p>مقالات و پژوهش‌های علمی در رشته‌های مختلف را پیدا کنید</p>
+            </div>
+            
+            <div id="searchResults" class="search-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>درباره علم‌هاب</h2>
+                    <p>
+                        علم‌هاب یک پلتفرم پیشرو است که به دموکراتیزه کردن دسترسی به دانش علمی اختصاص یافته است. 
+                        ما معتقدیم که پژوهش باید برای همه قابل دسترسی باشد، از دانشجویان و اساتید گرفته تا 
+                        پژوهشگران و ذهن‌های کنجکاو در سراسر جهان.
+                    </p>
+                    <p>
+                        ماموریت ما پل زدن بین کشف علمی و درک عمومی است، از طریق فراهم کردن یک پلتفرم 
+                        جامع و کاربرپسند برای دسترسی به مقالات پژوهشی بررسی‌شده در تمام رشته‌های علمی.
+                    </p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-download"></i>
+                            <h3>دانلود آسان</h3>
+                            <p>دانلود فوری مقالات پژوهشی در فرمت‌های مختلف</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-search"></i>
+                            <h3>جستجوی پیشرفته</h3>
+                            <p>با ابزارهای قدرتمند جستجو دقیقاً آنچه نیاز دارید پیدا کنید</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h3>جامعه علمی</h3>
+                            <p>با پژوهشگران ارتباط برقرار کنید و در گفتگوهای علمی شرکت کنید</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>تماس با ما</h2>
+                <p>برای هرگونه سوال یا پشتیبانی با تیم ما در تماس باشید</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>ایمیل</h3>
+                            <p>support@sciencehub.ir</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>تلفن</h3>
+                            <p>۰۲۱-۱۲۳۴۵۶۷۸</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>آدرس</h3>
+                            <p>تهران، خیابان پژوهش، پلاک ۱۲۳</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="نام شما" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="ایمیل شما" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="contactSubject" required>
+                            <option value="">موضوع را انتخاب کنید</option>
+                            <option value="general">استعلام عمومی</option>
+                            <option value="technical">پشتیبانی فنی</option>
+                            <option value="partnership">همکاری</option>
+                            <option value="feedback">بازخورد</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="پیام شما" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">ارسال پیام</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-atom"></i>
+                        <span>علم‌هاب</span>
+                    </div>
+                    <p>دموکراتیزه کردن دسترسی به دانش علمی در سراسر جهان.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>لینک‌های سریع</h3>
+                    <ul>
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#search">جستجو</a></li>
+                        <li><a href="#about">درباره ما</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul>
+                        <li><a href="#">زیست‌شناسی</a></li>
+                        <li><a href="#">فیزیک</a></li>
+                        <li><a href="#">شیمی</a></li>
+                        <li><a href="#">پزشکی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>پشتیبانی</h3>
+                    <ul>
+                        <li><a href="#">مرکز راهنمایی</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                        <li><a href="#">شرایط استفاده</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۳ علم‌هاب. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
