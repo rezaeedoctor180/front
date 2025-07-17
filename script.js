@@ -1,66 +1,142 @@
-// Sample articles data in Persian
+// Sample articles data with detailed academic fields
 const sampleArticles = [
     {
         id: 1,
-        title: "پیشرفت‌های محاسبات کوانتومی در کشف دارو",
-        authors: "دکتر سارا احمدی، دکتر محمد رضایی، دکتر فاطمه کریمی",
-        journal: "مجله محاسبات کوانتومی طبیعت",
-        year: "2024",
-        category: "physics",
-        abstract: "این مطالعه کاربردهای پیشرفته الگوریتم‌های محاسبات کوانتومی در تسریع فرآیندهای کشف دارو را ارائه می‌دهد که زمان محاسبه را نسبت به روش‌های کلاسیک ۷۵ درصد کاهش می‌دهد.",
-        downloadUrl: "#"
+        title: "The Emergence of Sound art: Opening the Cages of Sound",
+        subtitle: "The Emergence of Sound art",
+        author: "CARMEN PARDO",
+        contentType: "journal-article",
+        journal: "The Journal of Aesthetics and Art Criticism",
+        doi: "10.1111/jaac.12340",
+        pages: "35-48",
+        issn: "0021-8529",
+        volume: "75",
+        publisher: "Oxford University Press (OUP)",
+        publishedDate: "2017-01-00",
+        year: "2017",
+        category: "art",
+        url: "https://doi.org/10.1111/jaac.12340",
+        abstract: "این مقاله به بررسی ظهور هنر صوت به عنوان یک رشته هنری مستقل می‌پردازد و چگونگی رهایی صدا از قفس‌های سنتی موسیقی را تحلیل می‌کند."
     },
     {
         id: 2,
-        title: "ویرایش ژن CRISPR-Cas9 در اختلالات عصبی",
-        authors: "دکتر علی مرادی، دکتر لیلا حسینی، دکتر رضا نوری",
-        journal: "مجله پزشکی سلولی",
-        year: "2024",
-        category: "biology",
-        abstract: "ما کاربرد موفقیت‌آمیز فناوری CRISPR-Cas9 در درمان اختلالات عصبی ژنتیکی را نشان می‌دهیم که ۸۵ درصد بهبودی در نتایج بیماران در آزمایشات بالینی نشان می‌دهد.",
-        downloadUrl: "#"
+        title: "Digital Humanities and Literary Analysis: New Approaches",
+        subtitle: "New Approaches in Digital Humanities",
+        author: "محمد رضایی، سارا احمدی",
+        contentType: "journal-article",
+        journal: "مجله علوم انسانی دیجیتال",
+        doi: "10.1234/dh.2023.456",
+        pages: "112-128",
+        issn: "2345-6789",
+        volume: "12",
+        publisher: "انتشارات دانشگاه تهران",
+        publishedDate: "2023-03-15",
+        year: "2023",
+        category: "literature",
+        url: "https://doi.org/10.1234/dh.2023.456",
+        abstract: "این پژوهش به کاربرد تکنولوژی‌های دیجیتال در تحلیل ادبی می‌پردازد و روش‌های نوین تجزیه و تحلیل متون ادبی را معرفی می‌کند."
     },
     {
         id: 3,
-        title: "سنتز پایدار ترکیبات آلی جدید",
-        authors: "دکتر مریم غفاری، دکتر حسن عباسی، دکتر آنا پتروف",
-        journal: "نامه‌های شیمی سبز",
-        year: "2023",
-        category: "chemistry",
-        abstract: "توسعه مسیرهای سنتزی سازگار با محیط زیست برای مولکول‌های آلی پیچیده با استفاده از منابع تجدیدپذیر و کاهش تولید زباله.",
-        downloadUrl: "#"
+        title: "Phenomenology and Consciousness Studies",
+        subtitle: "Contemporary Perspectives",
+        author: "علی کریمی، فاطمه موسوی",
+        contentType: "journal-article",
+        journal: "مجله فلسفه معاصر",
+        doi: "10.1111/phil.2024.789",
+        pages: "45-67",
+        issn: "1234-5678",
+        volume: "28",
+        publisher: "انتشارات فلسفه و منطق",
+        publishedDate: "2024-01-20",
+        year: "2024",
+        category: "philosophy",
+        url: "https://doi.org/10.1111/phil.2024.789",
+        abstract: "بررسی جامع پدیدارشناسی و مطالعات آگاهی از دیدگاه فلاسفه معاصر و تأثیر آن بر فهم ما از ذهن انسان."
     },
     {
         id: 4,
-        title: "یادگیری ماشین در تصویربرداری تشخیصی",
-        authors: "دکتر کیوان زمانی، دکتر نرگس امینی، دکتر تام ویلسون",
-        journal: "بررسی هوش مصنوعی پزشکی",
-        year: "2024",
-        category: "computer-science",
-        abstract: "پیاده‌سازی شبکه‌های عصبی پیشرفته برای تجزیه و تحلیل خودکار تصاویر پزشکی، دستیابی به ۹۶ درصد دقت در تشخیص زودهنگام بیماری در چندین روش تصویربرداری.",
-        downloadUrl: "#"
+        title: "Social Media and Cultural Transformation",
+        subtitle: "A Sociological Analysis",
+        author: "نرگس امینی، حسن علوی",
+        contentType: "journal-article",
+        journal: "مجله جامعه‌شناسی فرهنگی",
+        doi: "10.1234/soc.2023.321",
+        pages: "89-105",
+        issn: "3456-7890",
+        volume: "15",
+        publisher: "مؤسسه مطالعات اجتماعی",
+        publishedDate: "2023-09-10",
+        year: "2023",
+        category: "sociology",
+        url: "https://doi.org/10.1234/soc.2023.321",
+        abstract: "تحلیل تأثیر شبکه‌های اجتماعی بر تحولات فرهنگی جامعه و بررسی الگوهای رفتاری جدید در عصر دیجیتال."
     },
     {
         id: 5,
-        title: "تأثیر تغییرات اقلیمی بر اکوسیستم‌های دریایی",
-        authors: "دکتر سوفیا مارتین، دکتر کارلوس سیلوا، دکتر جنیفر کلارک",
-        journal: "زیست‌شناسی دریایی امروز",
-        year: "2023",
-        category: "biology",
-        abstract: "تجزیه و تحلیل جامع تغییرات دمای اقیانوس‌ها و تأثیرات آن بر تنوع زیستی دریایی، نقاط بحرانی برای حفظ اکوسیستم را آشکار می‌کند.",
-        downloadUrl: "#"
+        title: "Memory and Trauma: Psychological Perspectives",
+        subtitle: "Clinical and Theoretical Approaches",
+        author: "دکتر مریم حسینی، دکتر رضا نجفی",
+        contentType: "journal-article",
+        journal: "مجله روان‌شناسی بالینی",
+        doi: "10.1111/psyc.2024.567",
+        pages: "78-94",
+        issn: "4567-8901",
+        volume: "22",
+        publisher: "انجمن روان‌شناسان ایران",
+        publishedDate: "2024-02-05",
+        year: "2024",
+        category: "psychology",
+        url: "https://doi.org/10.1111/psyc.2024.567",
+        abstract: "بررسی رابطه میان حافظه و تروما از منظر روان‌شناسی بالینی و ارائه رویکردهای درمانی نوین."
     },
     {
         id: 6,
-        title: "پیشرفت در درمان بیماری آلزایمر",
-        authors: "دکتر هلن فاستر، دکتر مارک جانسون، دکتر پاتریشیا دیویس",
-        journal: "مجله بین‌المللی مغز و اعصاب",
-        year: "2024",
-        category: "medicine",
-        abstract: "رویکرد درمانی جدید با هدف قرار دادن پلاک‌های آمیلوئید نتایج امیدوارکننده‌ای در آزمایشات بالینی فاز سوم نشان می‌دهد و عملکرد شناختی را در ۷۰ درصد بیماران بهبود می‌بخشد.",
-        downloadUrl: "#"
+        title: "Islamic Art and Architecture in Medieval Period",
+        subtitle: "Historical and Cultural Analysis",
+        author: "دکتر احمد تبریزی، دکتر زهرا اصفهانی",
+        contentType: "journal-article",
+        journal: "مجله تاریخ و تمدن اسلامی",
+        doi: "10.1234/hist.2022.890",
+        pages: "156-178",
+        issn: "5678-9012",
+        volume: "18",
+        publisher: "مرکز مطالعات تاریخی",
+        publishedDate: "2022-11-12",
+        year: "2022",
+        category: "history",
+        url: "https://doi.org/10.1234/hist.2022.890",
+        abstract: "تحلیل تاریخی و فرهنگی هنر و معماری اسلامی در دوره قرون وسطی و تأثیر آن بر فرهنگ عصر حاضر."
     }
 ];
+
+// Pricing data
+const pricingData = {
+    free: {
+        name: 'رایگان',
+        monthlyPrice: 0,
+        yearlyPrice: 0,
+        description: 'برای شروع'
+    },
+    basic: {
+        name: 'پایه',
+        monthlyPrice: 99000,
+        yearlyPrice: 950000,
+        description: 'برای دانشجویان'
+    },
+    premium: {
+        name: 'حرفه‌ای',
+        monthlyPrice: 199000,
+        yearlyPrice: 1900000,
+        description: 'برای پژوهشگران'
+    },
+    enterprise: {
+        name: 'سازمانی',
+        monthlyPrice: 499000,
+        yearlyPrice: 4800000,
+        description: 'برای موسسات و دانشگاه‌ها'
+    }
+};
 
 // DOM Elements
 const hamburger = document.querySelector('.hamburger');
@@ -112,9 +188,10 @@ function performSearch() {
     if (query) {
         filteredArticles = filteredArticles.filter(article => 
             article.title.toLowerCase().includes(query) ||
-            article.authors.toLowerCase().includes(query) ||
+            article.author.toLowerCase().includes(query) ||
             article.abstract.toLowerCase().includes(query) ||
-            article.journal.toLowerCase().includes(query)
+            article.journal.toLowerCase().includes(query) ||
+            article.doi.toLowerCase().includes(query)
         );
     }
     
@@ -149,32 +226,102 @@ function displaySearchResults(articles) {
     
     searchResults.innerHTML = articles.map(article => `
         <div class="article-card">
-            <h3 class="article-title">${article.title}</h3>
-            <p class="article-authors">${article.authors}</p>
-            <p class="article-journal">${article.journal}</p>
+            <div class="article-header">
+                <h3 class="article-title">${article.title}</h3>
+                ${article.subtitle ? `<p class="article-subtitle">${article.subtitle}</p>` : ''}
+            </div>
+            
+            <div class="article-authors">
+                <i class="fas fa-user"></i>
+                <span>${article.author}</span>
+            </div>
+            
+            <div class="article-journal">
+                <i class="fas fa-book-open"></i>
+                <span>${article.journal}</span>
+            </div>
+            
+            <div class="article-details">
+                <div class="detail-row">
+                    <span class="detail-label">نوع محتوا:</span>
+                    <span class="detail-value">${formatContentType(article.contentType)}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">DOI:</span>
+                    <span class="detail-value doi-link">${article.doi}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">صفحات:</span>
+                    <span class="detail-value">${article.pages}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">شماره مجله:</span>
+                    <span class="detail-value">${article.volume}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">ISSN:</span>
+                    <span class="detail-value">${article.issn}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">ناشر:</span>
+                    <span class="detail-value">${article.publisher}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">تاریخ انتشار:</span>
+                    <span class="detail-value">${formatDate(article.publishedDate)}</span>
+                </div>
+            </div>
+            
             <p class="article-abstract">${article.abstract}</p>
+            
             <div class="article-meta">
                 <span class="article-year">${article.year}</span>
                 <span class="article-category">${formatCategory(article.category)}</span>
             </div>
-            <button class="download-btn" onclick="downloadArticle(${article.id})">
-                <i class="fas fa-download"></i>
-                دانلود PDF
-            </button>
+            
+            <div class="article-actions">
+                <a href="${article.url}" target="_blank" class="view-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    مشاهده مقاله
+                </a>
+                <button class="download-btn" onclick="downloadArticle(${article.id})">
+                    <i class="fas fa-download"></i>
+                    دانلود
+                </button>
+            </div>
         </div>
     `).join('');
 }
 
 function formatCategory(category) {
     const categoryMap = {
-        'biology': 'زیست‌شناسی',
-        'physics': 'فیزیک',
-        'chemistry': 'شیمی',
-        'medicine': 'پزشکی',
-        'computer-science': 'علوم کامپیوتر',
-        'mathematics': 'ریاضیات'
+        'art': 'هنر و زیبایی‌شناسی',
+        'literature': 'ادبیات',
+        'philosophy': 'فلسفه',
+        'history': 'تاریخ',
+        'sociology': 'جامعه‌شناسی',
+        'psychology': 'روان‌شناسی'
     };
     return categoryMap[category] || category;
+}
+
+function formatContentType(type) {
+    const typeMap = {
+        'journal-article': 'مقاله مجله',
+        'book': 'کتاب',
+        'conference-paper': 'مقاله کنفرانس',
+        'thesis': 'پایان‌نامه'
+    };
+    return typeMap[type] || type;
+}
+
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('fa-IR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
 }
 
 function downloadArticle(articleId) {
@@ -210,6 +357,170 @@ function downloadArticle(articleId) {
         }, 3000);
     }
 }
+
+// Pricing functionality
+let isYearly = false;
+let selectedPackageData = null;
+
+// Pricing toggle functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const pricingToggle = document.getElementById('pricingToggle');
+    if (pricingToggle) {
+        pricingToggle.addEventListener('change', () => {
+            isYearly = pricingToggle.checked;
+            updatePricingDisplay();
+        });
+    }
+    
+    // Initial display
+    displaySearchResults(sampleArticles);
+    updatePricingDisplay();
+});
+
+function updatePricingDisplay() {
+    const monthlyPrices = document.querySelectorAll('.monthly-price');
+    const yearlyPrices = document.querySelectorAll('.yearly-price');
+    
+    if (isYearly) {
+        monthlyPrices.forEach(price => price.style.display = 'none');
+        yearlyPrices.forEach(price => price.style.display = 'block');
+    } else {
+        monthlyPrices.forEach(price => price.style.display = 'block');
+        yearlyPrices.forEach(price => price.style.display = 'none');
+    }
+}
+
+function selectPackage(packageType) {
+    selectedPackageData = {
+        type: packageType,
+        ...pricingData[packageType],
+        isYearly: isYearly
+    };
+    
+    if (packageType === 'free') {
+        // Handle free package signup
+        showNotification('عضویت رایگان شما فعال شد!', 'success');
+        return;
+    }
+    
+    if (packageType === 'enterprise') {
+        // Handle enterprise contact
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        return;
+    }
+    
+    // Show purchase modal
+    showPurchaseModal();
+}
+
+function showPurchaseModal() {
+    const modal = document.getElementById('purchaseModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const selectedPackage = document.getElementById('selectedPackage');
+    const selectedDuration = document.getElementById('selectedDuration');
+    const totalAmount = document.getElementById('totalAmount');
+    
+    modalTitle.textContent = `خرید پکیج ${selectedPackageData.name}`;
+    selectedPackage.textContent = selectedPackageData.name;
+    selectedDuration.textContent = isYearly ? 'سالانه' : 'ماهانه';
+    
+    const price = isYearly ? selectedPackageData.yearlyPrice : selectedPackageData.monthlyPrice;
+    totalAmount.textContent = `${price.toLocaleString('fa-IR')} تومان`;
+    
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closePurchaseModal() {
+    const modal = document.getElementById('purchaseModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    
+    // Reset form
+    document.getElementById('purchaseForm').reset();
+}
+
+// Purchase form handling
+document.addEventListener('DOMContentLoaded', () => {
+    const purchaseForm = document.getElementById('purchaseForm');
+    if (purchaseForm) {
+        purchaseForm.addEventListener('submit', handlePurchase);
+    }
+});
+
+function handlePurchase(e) {
+    e.preventDefault();
+    
+    const formData = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        package: selectedPackageData.name,
+        duration: isYearly ? 'سالانه' : 'ماهانه',
+        amount: isYearly ? selectedPackageData.yearlyPrice : selectedPackageData.monthlyPrice,
+        paymentMethod: document.querySelector('input[name="payment"]:checked').value
+    };
+    
+    // Simulate payment processing
+    const purchaseBtn = document.querySelector('.purchase-btn');
+    const originalText = purchaseBtn.innerHTML;
+    
+    purchaseBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> در حال پردازش...';
+    purchaseBtn.disabled = true;
+    
+    setTimeout(() => {
+        // Simulate successful payment
+        closePurchaseModal();
+        showNotification('پرداخت با موفقیت انجام شد! به زودی ایمیل تأیید دریافت خواهید کرد.', 'success');
+        
+        // Reset button
+        purchaseBtn.innerHTML = originalText;
+        purchaseBtn.disabled = false;
+        
+        // Log purchase data (in real app, send to server)
+        console.log('Purchase data:', formData);
+    }, 2000);
+}
+
+function showNotification(message, type = 'info') {
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        top: 100px;
+        left: 20px;
+        background: ${type === 'success' ? '#10b981' : '#2563eb'};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        z-index: 10000;
+        animation: slideIn 0.3s ease;
+        font-family: 'Vazirmatn', sans-serif;
+        max-width: 400px;
+    `;
+    notification.innerHTML = `
+        <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'}"></i>
+        ${message}
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 5000);
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('purchaseModal');
+    if (e.target === modal) {
+        closePurchaseModal();
+    }
+});
 
 // Add CSS animations for download notification
 const style = document.createElement('style');
@@ -333,9 +644,6 @@ document.addEventListener('DOMContentLoaded', () => {
         section.classList.add('animate-on-scroll');
         observer.observe(section);
     });
-    
-    // Initial display of search results
-    displaySearchResults(sampleArticles);
 });
 
 // Advanced search features
@@ -356,7 +664,7 @@ function exportSearchResults(format = 'csv') {
     if (query) {
         filteredArticles = filteredArticles.filter(article => 
             article.title.toLowerCase().includes(query) ||
-            article.authors.toLowerCase().includes(query) ||
+            article.author.toLowerCase().includes(query) ||
             article.abstract.toLowerCase().includes(query)
         );
     }
@@ -375,13 +683,14 @@ function exportSearchResults(format = 'csv') {
     
     if (format === 'csv') {
         const csvContent = [
-            ['عنوان', 'نویسندگان', 'مجله', 'سال', 'دسته‌بندی'],
+            ['عنوان', 'نویسنده', 'مجله', 'سال', 'DOI', 'ناشر'],
             ...filteredArticles.map(article => [
                 article.title,
-                article.authors,
+                article.author,
                 article.journal,
                 article.year,
-                formatCategory(article.category)
+                article.doi,
+                article.publisher
             ])
         ].map(row => row.map(cell => `"${cell}"`).join(',')).join('\n');
         
@@ -389,7 +698,7 @@ function exportSearchResults(format = 'csv') {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'search_results.csv';
+        a.download = 'megapaper_search_results.csv';
         a.click();
         window.URL.revokeObjectURL(url);
     }
@@ -409,6 +718,14 @@ document.addEventListener('keydown', (e) => {
         categoryFilter.value = '';
         yearFilter.value = '';
         performSearch();
+    }
+    
+    // Escape to close modal
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('purchaseModal');
+        if (modal && modal.style.display === 'block') {
+            closePurchaseModal();
+        }
     }
 });
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>علم‌هاب - پورتال مقالات پژوهشی</title>
+    <title>مگاپیپر - پورتال مقالات پژوهشی</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,12 +14,13 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <i class="fas fa-atom"></i>
-                    <span>علم‌هاب</span>
+                    <i class="fas fa-file-alt"></i>
+                    <span>مگاپیپر</span>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">خانه</a></li>
                     <li><a href="#search" class="nav-link">جستجو</a></li>
+                    <li><a href="#pricing" class="nav-link">پکیج‌ها</a></li>
                     <li><a href="#about" class="nav-link">درباره ما</a></li>
                     <li><a href="#contact" class="nav-link">تماس با ما</a></li>
                 </ul>
@@ -36,9 +37,9 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">دانش علمی را کشف کنید</h1>
+                <h1 class="hero-title">مقالات علمی و پژوهشی را کشف کنید</h1>
                 <p class="hero-description">
-                    به هزاران مقاله پژوهشی، مطالعات و انتشارات بررسی‌شده از مجلات علمی پیشرو در سراسر جهان دسترسی داشته باشید.
+                    به هزاران مقاله علمی، پژوهشی و انتشارات بررسی‌شده از مجلات معتبر در سراسر جهان دسترسی داشته باشید.
                 </p>
                 
                 <!-- Search Section in Hero -->
@@ -53,12 +54,12 @@
                     <div class="search-filters">
                         <select id="categoryFilter">
                             <option value="">همه دسته‌ها</option>
-                            <option value="biology">زیست‌شناسی</option>
-                            <option value="physics">فیزیک</option>
-                            <option value="chemistry">شیمی</option>
-                            <option value="medicine">پزشکی</option>
-                            <option value="computer-science">علوم کامپیوتر</option>
-                            <option value="mathematics">ریاضیات</option>
+                            <option value="art">هنر و زیبایی‌شناسی</option>
+                            <option value="literature">ادبیات</option>
+                            <option value="philosophy">فلسفه</option>
+                            <option value="history">تاریخ</option>
+                            <option value="sociology">جامعه‌شناسی</option>
+                            <option value="psychology">روان‌شناسی</option>
                         </select>
                         
                         <select id="yearFilter">
@@ -68,21 +69,24 @@
                             <option value="2022">۲۰۲۲</option>
                             <option value="2021">۲۰۲۱</option>
                             <option value="2020">۲۰۲۰</option>
+                            <option value="2019">۲۰۱۹</option>
+                            <option value="2018">۲۰۱۸</option>
+                            <option value="2017">۲۰۱۷</option>
                         </select>
                     </div>
                 </div>
                 
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">+۵۰ هزار</span>
+                        <span class="stat-number">+۱۰۰ هزار</span>
                         <span class="stat-label">مقاله</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">+۵۰۰</span>
+                        <span class="stat-number">+۱۰۰۰</span>
                         <span class="stat-label">مجله</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">+۱۰۰ هزار</span>
+                        <span class="stat-number">+۵۰۰ هزار</span>
                         <span class="stat-label">دانلود</span>
                     </div>
                 </div>
@@ -92,20 +96,20 @@
             <div class="hero-visual">
                 <div class="floating-cards">
                     <div class="card card-1">
-                        <i class="fas fa-dna"></i>
-                        <span>زیست‌شناسی</span>
+                        <i class="fas fa-palette"></i>
+                        <span>هنر</span>
                     </div>
                     <div class="card card-2">
-                        <i class="fas fa-atom"></i>
-                        <span>فیزیک</span>
+                        <i class="fas fa-book"></i>
+                        <span>ادبیات</span>
                     </div>
                     <div class="card card-3">
-                        <i class="fas fa-flask"></i>
-                        <span>شیمی</span>
+                        <i class="fas fa-brain"></i>
+                        <span>فلسفه</span>
                     </div>
                     <div class="card card-4">
-                        <i class="fas fa-brain"></i>
-                        <span>علوم اعصاب</span>
+                        <i class="fas fa-history"></i>
+                        <span>تاریخ</span>
                     </div>
                 </div>
             </div>
@@ -126,43 +130,254 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>پکیج‌های دسترسی</h2>
+                <p>پکیج مناسب خود را انتخاب کنید و به هزاران مقاله علمی دسترسی داشته باشید</p>
+            </div>
+
+            <div class="pricing-toggle">
+                <span class="toggle-label">ماهانه</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label">سالانه <span class="discount-badge">۲۰% تخفیف</span></span>
+            </div>
+
+            <div class="pricing-cards">
+                <!-- Free Package -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>رایگان</h3>
+                        <div class="price">
+                            <span class="currency">رایگان</span>
+                        </div>
+                        <p class="price-desc">برای شروع</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i>دسترسی به ۵ مقاله در ماه</li>
+                            <li><i class="fas fa-check"></i>جستجوی پایه</li>
+                            <li><i class="fas fa-check"></i>مشاهده خلاصه مقالات</li>
+                            <li><i class="fas fa-times"></i>دانلود مقالات</li>
+                            <li><i class="fas fa-times"></i>دسترسی به مقالات پریمیوم</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn" onclick="selectPackage('free')">شروع رایگان</button>
+                </div>
+
+                <!-- Basic Package -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>پایه</h3>
+                        <div class="price">
+                            <span class="monthly-price">
+                                <span class="amount">۹۹,۰۰۰</span>
+                                <span class="currency">تومان/ماه</span>
+                            </span>
+                            <span class="yearly-price" style="display: none;">
+                                <span class="amount">۹۵۰,۰۰۰</span>
+                                <span class="currency">تومان/سال</span>
+                            </span>
+                        </div>
+                        <p class="price-desc">برای دانشجویان</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i>دسترسی به ۵۰ مقاله در ماه</li>
+                            <li><i class="fas fa-check"></i>جستجوی پیشرفته</li>
+                            <li><i class="fas fa-check"></i>دانلود مقالات</li>
+                            <li><i class="fas fa-check"></i>ذخیره مقالات مورد علاقه</li>
+                            <li><i class="fas fa-times"></i>دسترسی به مقالات پریمیوم</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn" onclick="selectPackage('basic')">انتخاب پکیج</button>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">محبوب‌ترین</div>
+                    <div class="card-header">
+                        <h3>حرفه‌ای</h3>
+                        <div class="price">
+                            <span class="monthly-price">
+                                <span class="amount">۱۹۹,۰۰۰</span>
+                                <span class="currency">تومان/ماه</span>
+                            </span>
+                            <span class="yearly-price" style="display: none;">
+                                <span class="amount">۱,۹۰۰,۰۰۰</span>
+                                <span class="currency">تومان/سال</span>
+                            </span>
+                        </div>
+                        <p class="price-desc">برای پژوهشگران</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i>دسترسی نامحدود به مقالات</li>
+                            <li><i class="fas fa-check"></i>جستجوی هوشمند</li>
+                            <li><i class="fas fa-check"></i>دانلود بدون محدودیت</li>
+                            <li><i class="fas fa-check"></i>دسترسی به مقالات پریمیوم</li>
+                            <li><i class="fas fa-check"></i>پشتیبانی اولویت‌دار</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn premium" onclick="selectPackage('premium')">انتخاب پکیج</button>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>سازمانی</h3>
+                        <div class="price">
+                            <span class="monthly-price">
+                                <span class="amount">۴۹۹,۰۰۰</span>
+                                <span class="currency">تومان/ماه</span>
+                            </span>
+                            <span class="yearly-price" style="display: none;">
+                                <span class="amount">۴,۸۰۰,۰۰۰</span>
+                                <span class="currency">تومان/سال</span>
+                            </span>
+                        </div>
+                        <p class="price-desc">برای موسسات و دانشگاه‌ها</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i>تمام امکانات حرفه‌ای</li>
+                            <li><i class="fas fa-check"></i>چندین کاربر همزمان</li>
+                            <li><i class="fas fa-check"></i>گزارش‌گیری تفصیلی</li>
+                            <li><i class="fas fa-check"></i>API اختصاصی</li>
+                            <li><i class="fas fa-check"></i>پشتیبانی ۲۴/۷</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn" onclick="selectPackage('enterprise')">تماس برای قیمت</button>
+                </div>
+            </div>
+
+            <!-- Purchase Modal -->
+            <div id="purchaseModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="modalTitle">خرید پکیج</h3>
+                        <span class="close" onclick="closePurchaseModal()">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <form id="purchaseForm" class="purchase-form">
+                            <div class="form-section">
+                                <h4>اطلاعات شخصی</h4>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="firstName" placeholder="نام" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="lastName" placeholder="نام خانوادگی" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" placeholder="ایمیل" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" placeholder="تلفن همراه" required>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h4>جزئیات پکیج</h4>
+                                <div class="package-summary">
+                                    <div class="summary-item">
+                                        <span>پکیج انتخابی:</span>
+                                        <span id="selectedPackage"></span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span>مدت زمان:</span>
+                                        <span id="selectedDuration"></span>
+                                    </div>
+                                    <div class="summary-item total">
+                                        <span>مبلغ کل:</span>
+                                        <span id="totalAmount"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h4>روش پرداخت</h4>
+                                <div class="payment-methods">
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="zarinpal" checked>
+                                        <span class="payment-label">
+                                            <i class="fas fa-credit-card"></i>
+                                            درگاه زرین‌پال
+                                        </span>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="mellat">
+                                        <span class="payment-label">
+                                            <i class="fas fa-university"></i>
+                                            درگاه بانک ملت
+                                        </span>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="saman">
+                                        <span class="payment-label">
+                                            <i class="fas fa-money-check"></i>
+                                            درگاه بانک سامان
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="cancel-btn" onclick="closePurchaseModal()">انصراف</button>
+                                <button type="submit" class="purchase-btn">
+                                    <i class="fas fa-lock"></i>
+                                    پرداخت امن
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>درباره علم‌هاب</h2>
+                    <h2>درباره مگاپیپر</h2>
                     <p>
-                        علم‌هاب یک پلتفرم پیشرو است که به دموکراتیزه کردن دسترسی به دانش علمی اختصاص یافته است. 
-                        ما معتقدیم که پژوهش باید برای همه قابل دسترسی باشد، از دانشجویان و اساتید گرفته تا 
-                        پژوهشگران و ذهن‌های کنجکاو در سراسر جهان.
+                        مگاپیپر یک پلتفرم پیشرو است که به دموکراتیزه کردن دسترسی به مقالات علمی و پژوهشی اختصاص یافته است. 
+                        ما معتقدیم که دانش باید برای همه قابل دسترسی باشد، از دانشجویان و اساتید گرفته تا 
+                        پژوهشگران و علاقه‌مندان در سراسر جهان.
                     </p>
                     <p>
-                        ماموریت ما پل زدن بین کشف علمی و درک عمومی است، از طریق فراهم کردن یک پلتفرم 
-                        جامع و کاربرپسند برای دسترسی به مقالات پژوهشی بررسی‌شده در تمام رشته‌های علمی.
+                        ماموریت ما فراهم کردن دسترسی آسان و سریع به مقالات معتبر علمی است، از طریق یک پلتفرم 
+                        جامع و کاربرپسند که شامل اطلاعات تفصیلی مقالات مانند DOI، ناشر، ISSN و سایر متادیتاهای مهم است.
                     </p>
                     
                     <div class="features">
                         <div class="feature">
                             <i class="fas fa-download"></i>
-                            <h3>دانلود آسان</h3>
-                            <p>دانلود فوری مقالات پژوهشی در فرمت‌های مختلف</p>
+                            <h3>دانلود مستقیم</h3>
+                            <p>دانلود فوری مقالات با لینک مستقیم به منابع اصلی</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-search"></i>
-                            <h3>جستجوی پیشرفته</h3>
+                            <h3>جستجوی هوشمند</h3>
                             <p>با ابزارهای قدرتمند جستجو دقیقاً آنچه نیاز دارید پیدا کنید</p>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-users"></i>
-                            <h3>جامعه علمی</h3>
-                            <p>با پژوهشگران ارتباط برقرار کنید و در گفتگوهای علمی شرکت کنید</p>
+                            <i class="fas fa-database"></i>
+                            <h3>بانک اطلاعات جامع</h3>
+                            <p>اطلاعات کامل مقالات شامل DOI، ناشر، ISSN و متادیتای تفصیلی</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-visual">
                     <div class="about-image">
-                        <i class="fas fa-microscope"></i>
+                        <i class="fas fa-file-alt"></i>
                     </div>
                 </div>
             </div>
@@ -183,7 +398,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>ایمیل</h3>
-                            <p>support@sciencehub.ir</p>
+                            <p>support@megapaper.ir</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -233,10 +448,10 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-atom"></i>
-                        <span>علم‌هاب</span>
+                        <i class="fas fa-file-alt"></i>
+                        <span>مگاپیپر</span>
                     </div>
-                    <p>دموکراتیزه کردن دسترسی به دانش علمی در سراسر جهان.</p>
+                    <p>دسترسی آسان و سریع به مقالات علمی در سراسر جهان.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -250,6 +465,7 @@
                     <ul>
                         <li><a href="#home">خانه</a></li>
                         <li><a href="#search">جستجو</a></li>
+                        <li><a href="#pricing">پکیج‌ها</a></li>
                         <li><a href="#about">درباره ما</a></li>
                         <li><a href="#contact">تماس با ما</a></li>
                     </ul>
@@ -258,10 +474,10 @@
                 <div class="footer-section">
                     <h3>دسته‌بندی‌ها</h3>
                     <ul>
-                        <li><a href="#">زیست‌شناسی</a></li>
-                        <li><a href="#">فیزیک</a></li>
-                        <li><a href="#">شیمی</a></li>
-                        <li><a href="#">پزشکی</a></li>
+                        <li><a href="#">هنر و زیبایی‌شناسی</a></li>
+                        <li><a href="#">ادبیات</a></li>
+                        <li><a href="#">فلسفه</a></li>
+                        <li><a href="#">تاریخ</a></li>
                     </ul>
                 </div>
                 
@@ -277,7 +493,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; ۱۴۰۳ علم‌هاب. تمامی حقوق محفوظ است.</p>
+                <p>&copy; ۱۴۰۳ مگاپیپر. تمامی حقوق محفوظ است.</p>
             </div>
         </div>
     </footer>
